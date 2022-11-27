@@ -1,8 +1,9 @@
 import Head from "next/head";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Head>
         <title>Airbnb clone 📋</title>
         <meta
@@ -11,6 +12,7 @@ export default function Home() {
         />
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
-    </div>
+      <Header />
+    </>
   );
 }

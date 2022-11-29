@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    colors: {
+      airbnb: "#FF5A5F",
+    },
   },
   plugins: [],
 };

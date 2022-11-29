@@ -9,6 +9,9 @@ module.exports = {
     colors: {
       airbnb: "#FF5A5F",
     },
+    container: {
+      padding: "2rem",
+    },
   },
   plugins: [],
 };

@@ -14,7 +14,7 @@ module.exports = {
       },
     },
     colors: {
-      airbnb: "#FF5A5F",
+      airbnb: "#FF385C",
       "text-primary": "#484848",
       "text-secondary": "#767676",
       "text-white": "#ffffff",

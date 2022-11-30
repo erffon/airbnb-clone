@@ -13,7 +13,7 @@ const Header = () => {
         <h1 className="text-airbnb font-bold text-2xl tracking-tight font-Circular-black">airbnb</h1>
       </div>
       {/* ----------------------------- Middle - search ---------------------------- */}
-      <div className="flex items-center justify-between py-2 font-Circular-light gap-5 border pl-5 pr-2 rounded-full shadow-md border-text-secondary/20">
+      <div className="flex items-center justify-between py-2 font-Circular-light gap-5 border pl-5 pr-2 rounded-full shadow-md border-text-secondary/20 cursor-pointer">
         <button className="font-semibold text-text-primary">Anywhere</button>
         <button className="font-semibold text-text-primary border-r border-r-text-secondary/20 border-l border-l-text-secondary/20 px-3">Any week</button>
         <button className="text-text-secondary">Add guests</button>

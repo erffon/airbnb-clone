@@ -9,12 +9,12 @@ const Header = () => {
       {/* Left */}
       <div className="flex items-center flex-grow justify-start">
         <Image src={logo} priority alt="airbnb logo" width={35}/>
-        <h1 className="text-airbnb font-bold text-2xl tracking-tight">airbnb</h1>
+        <h1 className="text-airbnb font-bold text-2xl tracking-tight font-Circular-black">airbnb</h1>
       </div>
       {/* Middle - search */}
-      <div className="flex items-center flex-grow justify-center">
-        <button>Anywhere</button>
-        <button>Any week</button>
+      <div className="flex items-center justify-evenly flex-grow px-4 py-1">
+        <button className="font-semibold">Anywhere</button>
+        <button className="font-semibold">Any week</button>
         <button>Add guests</button>
         <div>
           <BiSearch/>

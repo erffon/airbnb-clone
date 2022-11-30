@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+    font-family: 'Circular light';
+    font-weight: 300;
+    src:url("../public/assets/fonts/CircularStd-Light.otf");
+  }
+    @font-face {
+    font-family: 'Circular medium';
+    font-weight: 400;
+    src: url("../public/assets/fonts/CircularStd-Medium.otf");
+  }
+    @font-face {
+    font-family: 'Circular bold';
+    font-weight: 500;
+    src: url("../public/assets/fonts/CircularStd-Bold.otf");
+  }
+    @font-face {
+    font-family: 'Circular black';
+    font-weight: 600;
+    src: url("../public/assets/fonts/CircularStd-Black.otf");
+  }
+
+}

@@ -5,7 +5,14 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "Circular-light": ["Circular light", "-apple-system", "Segoe UI"],
+        "Circular-medium": ["Circular medium", "-apple-system", "Segoe UI"],
+        "Circular-bold": ["Circular bold", "-apple-system", "Segoe UI"],
+        "Circular-black": ["Circular black", "-apple-system", "Segoe UI"],
+      },
+    },
     colors: {
       airbnb: "#FF5A5F",
     },

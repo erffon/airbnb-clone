@@ -25,8 +25,8 @@ const Header = () => {
       {/* ---------------------------------- Right --------------------------------- */}
       <div className="flex items-center flex-grow justify-end font-Circular-light gap-4">
         <p className="font-semibold text-text-primary">Airbnb you home</p>
-        <BiWorld className="text-xl"/>
-        <div className="flex items-center pr-1 pl-2 rounded-full py-1 border border-text-secondary/20 gap-2 relative">
+        <BiWorld className="text-lg"/>
+        <div className="flex items-center pr-1 pl-3 rounded-full py-1 border border-text-secondary/20 gap-3 relative">
           <RiMenuLine/>
           <RxAvatar className="text-3xl text-slate-700 bg-slate-400 rounded-full outline-none"/>
           <p className=" bg-airbnb w-4 h-4 border-2 border-white text-[0.6rem] text-white text-center rounded-full absolute right-0 -top-1 font-Circular-bold">1</p>

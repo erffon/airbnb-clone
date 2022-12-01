@@ -19,16 +19,17 @@ const Header = () => {
         <button className="text-text-secondary">Add guests</button>
         {/* search icon */}
         <div className="bg-airbnb p-2 rounded-full">
-          <IoSearch className=" text-text-white"/>
+          <IoSearch className=" text-white"/>
         </div>
       </div>
       {/* ---------------------------------- Right --------------------------------- */}
-      <div className="flex items-center flex-grow justify-end">
-        <p>Airbnb you home</p>
-        <BiWorld/>
-        <div className="flex items-center">
+      <div className="flex items-center flex-grow justify-end font-Circular-light gap-4">
+        <p className="font-semibold text-text-primary">Airbnb you home</p>
+        <BiWorld className="text-xl"/>
+        <div className="flex items-center pr-1 pl-2 rounded-full py-1 border border-text-secondary/20 gap-2 relative">
           <RiMenuLine/>
-          <RxAvatar/>
+          <RxAvatar className="text-3xl text-slate-700 bg-slate-400 rounded-full outline-none"/>
+          <div className="bg-airbnb w-4 h-4 border border-white text-sm font-bold text-white text-center rounded-full">1</div>
         </div>
       </div>
     </header>

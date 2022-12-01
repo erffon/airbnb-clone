@@ -12,12 +12,11 @@ module.exports = {
         "Circular-bold": ["Circular bold", "-apple-system", "Segoe UI"],
         "Circular-black": ["Circular black", "-apple-system", "Segoe UI"],
       },
-    },
-    colors: {
-      airbnb: "#FF385C",
-      "text-primary": "#484848",
-      "text-secondary": "#767676",
-      "text-white": "#ffffff",
+      colors: {
+        airbnb: "#FF385C",
+        "text-primary": "#222222",
+        "text-secondary": "#717171",
+      },
     },
     container: {
       padding: "2rem",

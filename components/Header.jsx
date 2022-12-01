@@ -29,7 +29,7 @@ const Header = () => {
         <div className="flex items-center pr-1 pl-2 rounded-full py-1 border border-text-secondary/20 gap-2 relative">
           <RiMenuLine/>
           <RxAvatar className="text-3xl text-slate-700 bg-slate-400 rounded-full outline-none"/>
-          <div className="bg-airbnb w-4 h-4 border border-white text-sm font-bold text-white text-center rounded-full">1</div>
+          <p className=" bg-airbnb w-4 h-4 border-2 border-white text-[0.6rem] text-white text-center rounded-full absolute right-0 -top-1 font-Circular-bold">1</p>
         </div>
       </div>
     </header>

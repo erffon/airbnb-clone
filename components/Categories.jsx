@@ -5,7 +5,7 @@ const categoryList = [{icon:<RiFireLine className="text-2xl"/>,title:"Trending"}
 
 const Categories = ({activeCategory =''}) => {
     const {query} =useRouter();
-    const activeCat = (activeCategory == query) || (activeCategory == "Trending")?"text-text-primary font-semibold border-b-2 border-black":'';
+    const activeCat = (activeCategory == query || "Trending")?"text-text-primary font-semibold border-b-2 border-black":'';
     
 
     return (

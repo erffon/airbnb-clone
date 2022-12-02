@@ -2,8 +2,10 @@ import Image from "next/image";
 import logo from "../public/assets/images/logo.png";
 import { BiWorld } from "react-icons/bi"
 import { RiMenuLine } from "react-icons/ri"
-import { RxAvatar } from "react-icons/rx"
 import { IoSearch } from "react-icons/io5"
+import { ImUser } from "react-icons/im"
+
+
 const Header = () => {
   return (
     <header className="sticky py-6 container px-20 flex flex-row">
@@ -28,8 +30,8 @@ const Header = () => {
         <BiWorld className="text-lg"/>
         <div className="flex items-center pr-1 pl-3 rounded-full py-1 border border-text-secondary/20 gap-3 relative">
           <RiMenuLine/>
-          <RxAvatar className="text-3xl text-slate-700 bg-slate-400 rounded-full outline-none"/>
-          <p className=" bg-airbnb w-4 h-4 border-2 border-white text-[0.6rem] text-white text-center rounded-full absolute right-0 -top-1 font-Circular-bold">1</p>
+          <ImUser className="text-3xl text-slate-600 bg-slate-500 rounded-full outline-none"/>
+          <p className=" bg-airbnb w-5 h-5 border-2 border-white text-[0.6rem] text-white text-center rounded-full absolute -right-1 -top-2 font-Circular-black">1</p>
         </div>
       </div>
     </header>

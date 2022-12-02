@@ -8,7 +8,7 @@ import { ImUser } from "react-icons/im"
 
 const Header = () => {
   return (
-    <header className="sticky py-6 container px-20 flex flex-row border-b mb-5">
+    <header className="sticky py-6 container px-20 flex flex-row border-b mb-7">
       {/* ---------------------------------- Left ---------------------------------- */}
       <div className="flex items-center flex-grow justify-start">
         <Image src={logo} priority alt="airbnb logo" width={35}/>

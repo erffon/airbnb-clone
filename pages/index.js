@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../components/Header";
+import Categories from "../components/Categories";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
       <Header />
+      <Categories />
     </>
   );
 }

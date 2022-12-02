@@ -23,5 +23,8 @@
     font-weight: 600;
     src: url("../public/assets/fonts/CircularStd-Black.otf");
   }
+  body {
+    @apply font-Circular-light
+  }
 
 }

@@ -11,7 +11,7 @@ const Categories = ({activeCategory}) => {
     return (
         <div className="flex container px-20 gap-10">
             {categoryList?.map(({icon,title})=>
-                <div className={`${activeCategory==title?activeCat:'text-text-secondary'} flex flex-col items-center gap-1 pb-2`}>
+                <div className={`${activeCategory==title?activeCat:'text-text-secondary'} flex flex-col items-center gap-1 pb-2 hover:text-text-primary hover:border-b-2 transition ease-out duration-200`}>
                     {icon}
                     <h2 className="text-sm">{title}</h2>
                 </div>

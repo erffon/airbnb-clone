@@ -16,6 +16,7 @@ module.exports = {
         airbnb: "#FF385C",
         "text-primary": "#222222",
         "text-secondary": "#717171",
+        "bg-secondary": "#f7f7f7",
       },
     },
     container: {

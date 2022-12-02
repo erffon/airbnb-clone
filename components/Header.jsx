@@ -27,10 +27,10 @@ const Header = ({activeCategory}) => {
           </div>
         </div>
         {/* ---------------------------------- Right --------------------------------- */}
-        <div className="flex items-center flex-grow justify-end gap-4">
-          <p className="font-semibold text-text-primary">Airbnb you home</p>
-          <BiWorld className="text-lg"/>
-          <div className="flex items-center pr-1 pl-3 rounded-full py-1 border border-text-secondary/20 gap-3   relative">
+        <div className="flex items-center flex-grow justify-end">
+          <p className="font-semibold text-text-primary px-5 py-2 rounded-full hover:bg-bg-secondary cursor-pointer">Airbnb you home</p>
+          <BiWorld className="text-lg w-9 h-9 p-2 rounded-full hover:bg-bg-secondary mr-2 cursor-pointer"/>
+          <div className="flex items-center pr-1 pl-3 rounded-full py-1 border border-text-secondary/20 gap-3   relative hover:shadow-md cursor-pointer">
             <RiMenuLine/>
             <ImUser className="text-3xl text-slate-600 bg-slate-500 rounded-full outline-none"/>
             <p className=" bg-airbnb w-5 h-5 border-2 border-white text-[0.6rem] text-white text-center   rounded-full absolute -right-1 -top-2 font-Circular-black">1</p>

@@ -5,14 +5,17 @@ import { RiMenuLine } from "react-icons/ri"
 import { IoSearch } from "react-icons/io5"
 import { ImUser } from "react-icons/im"
 import Categories from "./Categories";
+import { useRouter } from "next/router";
 
 
 const Header = ({activeCategory}) => {
+  const {push} =useRouter();
+  const logoClickHandler = ()=>push('/');
   return (
     <>
       <header className="sticky py-6 container px-20 flex flex-row border-b mb-7">
         {/* ---------------------------------- Left ---------------------------------- */}
-        <div className="flex items-center flex-grow justify-start">
+        <div className="flex items-center flex-grow justify-start cursor-pointer" onClick={logoClickHandler}>
           <Image src={logo} priority alt="airbnb logo" width={35}/>
           <h1 className="text-airbnb font-bold text-2xl tracking-tight font-Circular-black">airbnb</h1>
         </div>

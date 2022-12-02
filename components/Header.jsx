@@ -16,7 +16,7 @@ const Header = ({activeCategory}) => {
       <header className="sticky py-6 container px-20 flex flex-row border-b mb-7">
         {/* ---------------------------------- Left ---------------------------------- */}
         <div className="flex items-center flex-grow justify-start cursor-pointer" onClick={logoClickHandler}>
-          <Image src={logo} priority alt="airbnb logo" width={35}/>
+          <Image src={logo} priority alt="airbnb logo" width={35} title="Airbnb logo"/>
           <h1 className="text-airbnb font-bold text-2xl tracking-tight font-Circular-black">airbnb</h1>
         </div>
         {/* ----------------------------- Middle - search ---------------------------- */}

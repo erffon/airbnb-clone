@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
       <Header />
-      <Categories activeCategory="" />
+      <Categories activeCategory="Trending" />
     </>
   );
 }

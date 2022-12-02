@@ -1,26 +1,18 @@
 import { useRouter } from "next/router";
-import { useState } from "react";
 import {RiFireLine} from "react-icons/ri";
 
 
 
-const Categories = ({activeCategory}) => {
+const Categories = ({activeCategory =''}) => {
     const {query} =useRouter();
-    const [activeCat, setActiveCat] = useState("");
-
-    switch (activeCategory) {
-        case query:
-            setActiveCat("text-text-primary")
-            break;
-        default:
-            break;
-    }
+    const activeCat = (activeCategory == query) || (activeCategory == "Trending")?"text-text-primary font-semibold":'';
+    
 
     return (
         <div className="flex">
-            <div className="flex flex-col">
-                <RiFireLine/>
-                <h2 className={`${activeCat}`}>Trending</h2>
+            <div className="flex flex-col justify-center">
+                <RiFireLine className={`${activeCat} text-lg`}/>
+                <h2 className={`${activeCat} `}>Trending</h2>
             </div>
         </div>
     );

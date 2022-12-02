@@ -9,9 +9,9 @@ const Categories = ({activeCategory =''}) => {
     
 
     return (
-        <div className="flex">
-            <div className="flex flex-col justify-center">
-                <RiFireLine className={`${activeCat} text-lg`}/>
+        <div className="flex container px-20">
+            <div className="flex flex-col items-center">
+                <RiFireLine className={`${activeCat} text-3xl`}/>
                 <h2 className={`${activeCat} `}>Trending</h2>
             </div>
         </div>

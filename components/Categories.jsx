@@ -10,8 +10,8 @@ const Categories = ({activeCategory =''}) => {
 
     return (
         <div className="flex container px-20 gap-10">
-            {categoryList?.map(({icon,title},index)=>
-                <div className={`${activeCat} flex flex-col items-center gap-1 pb-2`} key={index}>
+            {categoryList?.map(({icon,title})=>
+                <div className={`${activeCat} flex flex-col items-center gap-1 pb-2`}>
                     {icon}
                     <h2 className="text-sm">{title}</h2>
                 </div>

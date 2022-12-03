@@ -21,7 +21,7 @@ const Categories = ({activeCategory}) => {
                     <h2 className="text-xs font-semibold">{title}</h2>
                 </div>
             )}
-            <div className="flex border px-4 items-center rounded-xl gap-2 cursor-pointer">
+            <div className="flex border px-4 items-center rounded-xl gap-2 cursor-pointer hover:shadow-md transition ease-out duration-200">
                 <RiEqualizerLine/>
                 <p className="text-sm font-semibold">Filters</p>
             </div>

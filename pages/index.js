@@ -2,8 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HousesGrid from "../components/HousesGrid";
 
-export default function Home({ img, title, description, star, price }) {
-  //src,title,subtitle,stars,date,price
+export default function Home({ houses }) {
   return (
     <>
       <Head>
@@ -16,19 +15,19 @@ export default function Home({ img, title, description, star, price }) {
       </Head>
       <Header activeCategory="Trending" />
       <HousesGrid
-        src={img}
-        title={title}
-        subtitle={description}
-        stars={star}
+        src={houses.img}
+        title={houses.title}
+        subtitle={houses.description}
+        stars={houses.star}
         date={"Mar 19-24"}
-        price={price}
+        price={houses.price}
       />
     </>
   );
 }
 
-export const getStaticProps = async (ctx) => {
-  const res = await fetch("https://links.papareact.com/isz");
+export const getStaticProps = async () => {
+  const res = await fetch("https://www.jsonkeeper.com/b/5NPS");
   const houses = await res.json();
 
   return {

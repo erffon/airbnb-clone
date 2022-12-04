@@ -5,15 +5,15 @@ const HousesGrid = ({houses}) => {
     return (
         //wrapper
         <div>
-            {houses.map(({src,title,subtitle,stars,date,price})=>{
+            {houses.map((props)=>{
                 {/* picture */}
             <Image src={src} title={title} alt={title} className="" width={100} height={100}/>
             {/* title and stars */}
             <div>
-                <h3>{title}</h3>
+                <h3>{props.title}</h3>
                 <div>
                     <AiFillStar/>
-                    <p>{stars}</p>
+                    <p>{props.stars}</p>
                 </div>
             </div>
             {/* subtitle */}
@@ -21,7 +21,7 @@ const HousesGrid = ({houses}) => {
             {/* date */}
             <p>{date}</p>
             {/* price */}
-            <p>${price}night</p>
+            <p>${props.price}night</p>
             })}
         </div>
     );

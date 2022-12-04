@@ -2,7 +2,8 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HousesGrid from "../components/HousesGrid";
 
-export default function Home() {
+export default function Home({ img, title, description, star, price }) {
+  //src,title,subtitle,stars,date,price
   return (
     <>
       <Head>
@@ -14,7 +15,25 @@ export default function Home() {
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
       <Header activeCategory="Trending" />
-      <HousesGrid />
+      <HousesGrid
+        src={img}
+        title={title}
+        subtitle={description}
+        stars={star}
+        date={"Mar 19-24"}
+        price={price}
+      />
     </>
   );
 }
+
+export const getStaticProps = async (ctx) => {
+  const res = await fetch("https://links.papareact.com/isz");
+  const houses = await res.json();
+
+  return {
+    props: {
+      houses,
+    },
+  };
+};

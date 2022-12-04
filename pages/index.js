@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HousesGrid from "../components/HousesGrid";
 
-export default function Home(houses) {
+export default function Home(result) {
   return (
     <>
       <Head>
@@ -14,25 +14,18 @@ export default function Home(houses) {
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
       <Header activeCategory="Trending" />
-      <HousesGrid
-        src={houses.houses.img}
-        title={houses.houses.title}
-        subtitle={houses.houses.location}
-        stars={houses.houses.star}
-        date={"Mar 19-24"}
-        price={houses.houses.price}
-      />
+      <HousesGrid houses={result} />
     </>
   );
 }
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://www.jsonkeeper.com/b/5NPS");
-  const houses = await res.json();
+  const respond = await fetch("https://dummyjson.com/products");
+  const result = await respond.json();
 
   return {
     props: {
-      houses,
+      result,
     },
   };
 };

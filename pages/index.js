@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HousesGrid from "../components/HousesGrid";
 
-export default function Home({ houses }) {
+export default function Home(houses) {
   return (
     <>
       <Head>
@@ -15,12 +15,12 @@ export default function Home({ houses }) {
       </Head>
       <Header activeCategory="Trending" />
       <HousesGrid
-        src={houses.img}
-        title={houses.title}
-        subtitle={houses.description}
-        stars={houses.star}
+        src={houses.houses.img}
+        title={houses.houses.title}
+        subtitle={houses.houses.location}
+        stars={houses.houses.star}
         date={"Mar 19-24"}
-        price={houses.price}
+        price={houses.houses.price}
       />
     </>
   );

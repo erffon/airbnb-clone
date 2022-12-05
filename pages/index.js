@@ -20,8 +20,18 @@ export default function Home(result) {
 }
 
 export const getStaticProps = async () => {
-  const respond = await fetch("https://dummyjson.com/products");
-  const result = await respond.json();
+  const options = {
+    method: "GET",
+    headers: {
+      "X-RapidAPI-Key": "aa89cf8074msh58afd90dbc41711p1f6e1ejsn0ea3bd63df06",
+      "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
+    },
+  };
+
+  const results = await fetch(
+    "https://airbnb13.p.rapidapi.com/autocomplete?query=paris",
+    options
+  );
 
   return {
     props: {

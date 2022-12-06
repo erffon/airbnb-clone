@@ -2,7 +2,8 @@ import Head from "next/head";
 import Header from "../components/Header";
 import HousesGrid from "../components/HousesGrid";
 
-export default function Home(result) {
+export default function Home({ results }) {
+  console.log("results :", results);
   return (
     <>
       <Head>
@@ -14,7 +15,7 @@ export default function Home(result) {
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
       <Header activeCategory="Trending" />
-      <HousesGrid houses={result} />
+      {/* <HousesGrid houses={results} /> */}
     </>
   );
 }
@@ -31,11 +32,11 @@ export const getStaticProps = async () => {
   const results = await fetch(
     "https://airbnb13.p.rapidapi.com/autocomplete?query=paris",
     options
-  );
+  ).then((res) => res.json());
 
   return {
     props: {
-      result,
+      results,
     },
   };
 };

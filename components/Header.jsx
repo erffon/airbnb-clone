@@ -13,7 +13,7 @@ const Header = ({activeCategory}) => {
   const logoClickHandler = ()=>push('/');
   return (
     <>
-      <header className="sticky py-6 container px-20 flex flex-row border-b mb-7 sticky">
+      <header className="py-6 container px-20 flex flex-row border-b mb-7 sticky">
         {/* ---------------------------------- Left ---------------------------------- */}
         <div className="flex items-center flex-grow justify-start cursor-pointer" onClick={logoClickHandler}>
           <Image src={logo} priority alt="airbnb logo" width={35} title="Airbnb logo"/>

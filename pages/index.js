@@ -21,18 +21,13 @@ export default function Home({ results }) {
 }
 
 export const getStaticProps = async () => {
-  const options = {
-    method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "aa89cf8074msh58afd90dbc41711p1f6e1ejsn0ea3bd63df06",
-      "X-RapidAPI-Host": "airbnb13.p.rapidapi.com",
-    },
-  };
-
-  const results = await fetch(
-    "https://airbnb13.p.rapidapi.com/autocomplete?query=paris",
-    options
-  ).then((res) => res.json());
+  const results = fetch(
+    "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/bbd1300a/flats.json"
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+    });
 
   return {
     props: {

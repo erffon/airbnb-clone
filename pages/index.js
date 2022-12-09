@@ -21,13 +21,10 @@ export default function Home({ results }) {
 }
 
 export const getStaticProps = async () => {
-  const results = fetch(
+  const resp = await fetch(
     "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/bbd1300a/flats.json"
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-    });
+  );
+  const results = await resp.json();
 
   return {
     props: {

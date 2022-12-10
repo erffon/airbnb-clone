@@ -1,28 +1,16 @@
 import Image from "next/image";
 import {AiFillStar} from "react-icons/ai"
 
-const HousesGrid = (props) => {
+const HousesGrid = ({houses}) => {
     return (
         //wrapper
         <div>
-            {props.map(({src,title,stars,subtitle,date,price})=>{
-                {/* picture */}
-            <Image src={src} title={title} alt={title} className="" width={100} height={100}/>
+            {/* picture */}
             {/* title and stars */}
-            <div>
-                <h3>{title}</h3>
-                <div>
-                    <AiFillStar/>
-                    <p>{stars}</p>
-                </div>
-            </div>
+            
             {/* subtitle */}
-            <p>{subtitle}</p>
             {/* date */}
-            <p>{date}</p>
             {/* price */}
-            <p>${price}night</p>
-            })}
         </div>
     );
 }

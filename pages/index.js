@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import HousesGrid from "../components/HousesGrid";
 
 export default function Home({ results }) {
-  console.log("results :", results);
   return (
     <>
       <Head>
@@ -15,7 +14,7 @@ export default function Home({ results }) {
         <link rel="icon" href="/airbnb-favicon.ico" />
       </Head>
       <Header activeCategory="Trending" />
-      {/* <HousesGrid houses={results} /> */}
+      <HousesGrid houses={results} />
     </>
   );
 }

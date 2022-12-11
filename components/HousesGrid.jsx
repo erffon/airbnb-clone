@@ -3,11 +3,14 @@ import {AiFillStar} from "react-icons/ai"
 
 const HousesGrid = ({houses}) => {
     return (
-        <ul className="">
+        <ul className="container flex flex-wrap justify-evenly mt-2">
             {houses.map(({id,imageUrl,name,price,priceCurrency})=>{
-                <li key={id}>
-                    <Image width={100} height={100} alt={name} className="rounded-md bg-red-600" src={imageUrl}/>
-                </li>
+                console.log(imageUrl);
+                return (
+                    <li key={id} className="w-80 h-72 relative rounded-xl overflow-hidden mt-10">
+                        <Image src={imageUrl} fill objectFit="cover"/>
+                    </li>
+                );
             })}
         </ul>
     );

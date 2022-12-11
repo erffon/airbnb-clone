@@ -9,6 +9,9 @@ const HousesGrid = ({houses}) => {
                 return (
                     <li key={id} className="w-80 h-72 relative rounded-xl overflow-hidden mt-10">
                         <Image src={imageUrl} fill objectFit="cover"/>
+                        <h3>{name}</h3>
+                        <p>{`${priceCurrency + price} night`}</p>
+
                     </li>
                 );
             })}

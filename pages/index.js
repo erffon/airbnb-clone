@@ -1,6 +1,6 @@
-import Head from "next/head";
-import Header from "../components/Header";
-import HousesGrid from "../components/HousesGrid";
+import Head from 'next/head';
+import Header from '../components/Header';
+import HousesGrid from '../components/HousesGrid';
 
 export default function Home({ results }) {
   return (
@@ -20,9 +20,7 @@ export default function Home({ results }) {
 }
 
 export const getStaticProps = async () => {
-  const resp = await fetch(
-    "https://cdn.rawgit.com/abbassiddiqi/airbnb-api/bbd1300a/flats.json"
-  );
+  const resp = await fetch('https://cdn.rawgit.com/abbassiddiqi/airbnb-api/bbd1300a/flats.json');
   const results = await resp.json();
 
   return {

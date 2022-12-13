@@ -7,8 +7,10 @@ const HousesGrid = ({houses}) => {
             {houses.map(({id,imageUrl,name,price,priceCurrency})=>{
                 console.log(name);
                 return (
-                    <li key={id} className="w-80 h-72 relative rounded-xl overflow-hidden mt-10 flex flex-col">
-                        <Image src={imageUrl} fill/>
+                    <li key={id} className="w-80 relative rounded-xl overflow-hidden mt-10 flex flex-col">
+                        <figure className="w-full h-72">
+                            <Image src={imageUrl} objectFit="cover" fill className="rounded-xl overflow-hidden !static"/>
+                        </figure>
                         <h3>{name}</h3>
                         <p>{`${priceCurrency + price} night`}</p>
                     </li>

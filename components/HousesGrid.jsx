@@ -5,13 +5,12 @@ const HousesGrid = ({houses}) => {
     return (
         <ul className="container flex flex-wrap justify-evenly mt-2">
             {houses.map(({id,imageUrl,name,price,priceCurrency})=>{
-                console.log(imageUrl);
+                console.log(name);
                 return (
-                    <li key={id} className="w-80 h-72 relative rounded-xl overflow-hidden mt-10">
-                        <Image src={imageUrl} fill objectFit="cover"/>
+                    <li key={id} className="w-80 h-72 relative rounded-xl overflow-hidden mt-10 flex flex-col">
+                        <Image src={imageUrl} fill/>
                         <h3>{name}</h3>
                         <p>{`${priceCurrency + price} night`}</p>
-
                     </li>
                 );
             })}

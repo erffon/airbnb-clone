@@ -3,10 +3,10 @@ import { AiFillStar } from 'react-icons/ai';
 
 const HousesGrid = ({ houses }) => {
   return (
-    <ul className="container flex flex-wrap justify-evenly">
+    <ul className="container flex flex-wrap justify-evenly my-8">
       {houses.map(({ id, imageUrl, name, price, priceCurrency }) => {
         return (
-          <li key={id} className="w-80 relative rounded-xl overflow-hidden mt-8 flex flex-col justify-between text-sm">
+          <li key={id} className="w-80 relative rounded-xl overflow-hidden mb-8 flex flex-col justify-between text-sm">
             <figure className="w-full h-72">
               <Image src={imageUrl} fill className="rounded-xl overflow-hidden !static" />
             </figure>
